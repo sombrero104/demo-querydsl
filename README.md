@@ -1,4 +1,4 @@
-# QueryDSL
+# QueryDSL (Query Domain Specific Language)
 쿼리를 자바 코드로 표현하는 방법.
 <pre>
 List❮Person❯ persons = queryFactory.selectFrom(person)
