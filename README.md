@@ -63,7 +63,7 @@ http://www.querydsl.com/static/querydsl/4.4.0/reference/html_single/#d0e137
 </pre>
 의존성을 추가한 후 메이븐에서 compile을 실행하면 'target/generated-sources/java' 경로에 <br/>
 Account 엔티티에 대한 Query Language(QAccount)를 만들어 준다. <br/>
-<img src="./images/query_language.png" width="45%" /><br/>
+<img src="./images/query_language.png" width="25%" /><br/>
 <br/><br/><br/><br/>
 
 
