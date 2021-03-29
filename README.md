@@ -64,7 +64,8 @@ http://www.querydsl.com/static/querydsl/4.4.0/reference/html_single/#d0e137
 의존성을 추가한 후 메이븐에서 compile을 실행하면 'target/generated-sources/java' 경로에 <br/>
 Account 엔티티에 대한 Query Language(QAccount)를 만들어 준다. <br/><br/>
 <img src="./images/query_language.png" /><br/><br/>
-그리고 Repository에서 QuerydslPredicateExecutor를 상속받도록 해준다. 
+그리고 Repository에서 QuerydslPredicateExecutor를 상속받도록 해준다. <br/>
+그럼 QuerydslPredicateExecutor가 제공하는 메소드들을 사용할 수 있게 된다. 
 <pre>
 public interface AccountRepository 
     extends JpaRepository❮Account, Long❯, QuerydslPredicateExecutor❮Account❯ {
