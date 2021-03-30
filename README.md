@@ -71,6 +71,25 @@ public interface AccountRepository
     extends JpaRepository❮Account, Long❯, QuerydslPredicateExecutor❮Account❯ {
 }
 </pre>
+<pre>
+@DataJpaTest
+class AccountRepositoryTest {
+
+    @Autowired
+    AccountRepository accountRepository;
+
+    @Test
+    public void crud() {
+        QAccount account = QAccount.account;
+        Predicate predicate = account
+                .firstName.containsIgnoreCase("Erlend")
+                .and(account.lasName.startsWith("Oye"));
+        Optional❮Account❯ one = accountRepository.findOne(predicate);
+        assertThat(one).isEmpty();
+    }
+
+}
+</pre>
 <br/><br/><br/><br/>
 
 
